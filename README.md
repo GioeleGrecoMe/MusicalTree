@@ -28,7 +28,7 @@ The training is done using `GridSearchCV` which exhaustively considers all param
 ### Model Testing and Accuracy Evaluation:
 The model is evaluated on the test set extracted at the beginning from the feature dataset in performing class prediction on newly unseen data.
 Here we report the obtained confusion matrix.
-![](images/Confusion.png)
+<p> <img width="150" height="150" src="images/Confusion.png"> </p>
 
 ### Recording and Communication with Processing
 The application makes a recording with a duration of 1 second every second of music.
