@@ -2,7 +2,7 @@
 This is the repository for our CPAC project. 
 A demo video can be found at this link: 
 
-## Abstract 
+## Abstract:
 The Musical Tree is a 3D music visualizer that can adapt itself depending on the musical genre to which it is exposed.
 It is composed by a tree that grows “following” the music and by other interactive elements. 
 
