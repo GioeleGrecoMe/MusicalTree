@@ -13,9 +13,6 @@ We implemented a machine learning based algorithm to perform the genre classific
 Different kind of *low-level* and *high level* audio features are computed. They are categorized into rhythmic, spectral and tonal. They are decomposed into low-level and high-level according to the frame size: low-level features are extracted from a short window (1024 samples, 44.45 [ms] of duration) while high-level features are extracted from longer windows to gain a better frequency resolution (4096 samples, 186 [ms]), the first with 50% of overlap between successive windows, the second with 75%.
 The different frame-based features are computed and then integrated over the all audio extract duration by means of the different **statistical moments** like *maximum* value, *minimum* value, *mean*, *standard deviation*, *skewness* and *kurtosis*.
 
-### Music Genre Classification:
-Using the features extracted from the audio segments contained in the GTZAN dataset, we build up the model for classification. The Classification is only limited to the classes 'Classical', 'Pop', 'Reggae', 'Rock', 'Jazz'.
-
 ### Splitting the data into Training Set and Test Set:
 Here we build the sets `X_train` and `y_train` which are the training set of features and their corresponding set of labels, and the sets `X_test` and `y_test` which are the testing set of features. 
 
