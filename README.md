@@ -1,6 +1,6 @@
 # MusicalTree
 This is the repository for our CPAC project. 
-A demo video can be found at this link: 
+A demo video can be found at this link: https://youtu.be/7pRX-LU2cJ0
 
 ## Abstract:
 The Musical Tree is a 3D music visualizer that can adapt itself depending on the musical genre to which it is exposed.
@@ -32,3 +32,7 @@ The application makes a recording with a duration of 1 second every second of mu
 After the recording the code extracts the features on the recorded signal and predicts the genre. Finally the labelled genre is sent to processing via OSC messages.
 
 ## Visualization with Processing
+
+
+
+Developed by Gioele Greco, Tommaso Botti and Nicolò Botti.
