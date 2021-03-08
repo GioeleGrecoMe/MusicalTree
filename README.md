@@ -53,6 +53,11 @@ It is also possible to correct the implementation by uncomment the approximated 
 The graphical component can be devided in two time-dependent macro classes:
  - instantaneous reactive components
  - stored datas component: tree.
+#### Color selection
+Colors and sounds are associated by the superposition of the color chromatic wheel and the music chromatic wheel.
+The light intensity is associated to the intensity of the sound.
+This synaesthetics choices are very common in classical music since the 700’.
+
 ### Tree
 The main component is the tree, starting from the "3D fractal tree"(https://www.youtube.com/watch?v=JcopTKXt8L8) was created some functions that make tree interact with the stored sound datas.
 Tree grows trhought points that are calculated and stored during all the time.
@@ -75,25 +80,24 @@ At a distance Z over the planet is located a light that has the color of the sum
 A bolt starts from the light computed point and falls on the planet when the sound level is around the peak. Its color is related to the highest sound.
 #### Genre dependent components
 ##### Classica
-  -7 columns around the tree that represents the notes. They shake when the level is around the peak
-  -a light illuminates the column of the highest note proportionally to the intensity of sound
-  -sun that is computed like waveshape in 2 dimensions
+  - 7 columns around the tree that represents the notes. They shake when the level is around the peak
+  - a light illuminates the column of the highest note proportionally to the intensity of sound
+  - sun that is computed like waveshape in 2 dimensions
 ##### Reggae
-  -setting sun that is computed like waveshape in 2 dimensions
+  - setting sun that is computed like waveshape in 2 dimensions
 “typical” leaves that navigate in the sky
-  -background and tree leaves are colored in green, yellow and red
+  - background and tree leaves are colored in green, yellow and red
 ##### Pop
-  -Flash when level is very high
-  -Color mixed points cloud that expands proportionally to the sound level 
+  - Flash when level is very high
+  - Color mixed points cloud that expands proportionally to the sound level 
 ##### Rock
-  -Flash with rock hands on the background
-  -planet that change radius as sound level
+  - Flash with rock hands on the background
+  - planet that change radius as sound level
 ##### Jazz
-  -Stars that moves simulating a real sky
-  -saxophone and piano that moves as the sound level
-  -star fountain that come out from the sax when mean level is high
-  -light in piano of the color of the strongest note
+  - Stars that moves simulating a real sky
+  - saxophone and piano that moves as the sound level
+  - star fountain that come out from the sax when mean level is high
+  - light in piano of the color of the strongest note
 
-## DEMO
 
 Developed by Gioele Greco, Tommaso Botti and Nicolò Botti.
