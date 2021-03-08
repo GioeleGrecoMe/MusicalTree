@@ -32,7 +32,31 @@ The application makes a recording with a duration of 1 second every second of mu
 After the recording the code extracts the features on the recorded signal and predicts the genre. Finally the labelled genre is sent to processing via OSC messages.
 
 ## Visualization with Processing
+The implementation can be divided in three parts:
+  - elaboration of the audio input
+  - graphical components
+  - comunication from Python to Processing
+### Audio
+Starting from the “Audio analysis for pitch extraction” made by L. Anton-Canalis (https://gist.github.com/uberjosh/5001856#file-gistfile1-txt) that uses Minim library.
+This code was rearranged to our purposes and extract some useful parameters:
+ -	Spectrum 
+ -	first 10 high intensity harmonics (frequency and amplitude)
+ -	total amplitude of the signal
+ -	energy of the signal
+Each one of these parameters is also stored in a buffer that allow to calculate:
+ -	mean intensity level
+ -	mean spectrum
 
 
+It is also possible to correct the implementation by uncomment the approximated phone curve
+### graphical components
+The graphical component can be devided in two time-dependent macro classes:
+ - instantaneous reactive components
+ - stored datas component: tree.
+#### Tree
+The main component is the tree, starting from the "3D fractal tree"(https://www.youtube.com/watch?v=JcopTKXt8L8) was created some functions that make tree interact with the stored sound datas.
+Tree grows trhought points that are calculated and stored during all the time.
+The points coordinates are stored every 0.8s.
+The location of the points 
 
 Developed by Gioele Greco, Tommaso Botti and Nicolò Botti.
