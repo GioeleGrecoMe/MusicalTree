@@ -16,7 +16,7 @@ Minim minim;
 ColorSound CSM;
 
 //GRANDEZZA BUFFER
-int Buff = 16; //4 per 5m //8 per 10m //16 per 30m //32 per 1h e 30m circa//Il buffer lo puoi usare come fattore di crescita, con 16 in mezz'ora di musica cresce un bell'albero
+int Buff = 8; //4 per 5m //8 per 10m //16 per 30m //32 per 1h e 30m circa//Il buffer lo puoi usare come fattore di crescita, con 16 in mezz'ora di musica cresce un bell'albero
 float[] livelli = new float[100];
 float[][] Fz = new float[300][Buff+2]; //righe= frequenze colonne: ampiezza media, ampiezze negli ultimi 100 frame
 float[] FB=new float[1];
@@ -47,7 +47,7 @@ float col=0;
 float hs,ss,bs;
 int fulm=0;
 //genere set
-
+int DDD = 0;
 
 OscP5 oscP5;
 Float bpm;
@@ -124,7 +124,16 @@ void keyPressed() {
       AMPLI = AMPLI+0.1;
     } else if (keyCode == DOWN) {
       AMPLI = AMPLI-0.1;
-    } else if (keyCode == ENTER ){println("l'amplificazione è"+AMPLI);}
+    } else if (keyCode == ENTER ){
+      println("l'amplificazione è"+AMPLI);
+    } else if (keyCode == SHIFT ){
+      if(DDD==0){
+          DDD=1;
+        }else{
+          DDD=0;
+        }
+      println("Hai cambiato visualizzazione");
+    }
     println("la nuova amplificazione è"+AMPLI);
       if (keyCode == ALT ) {
         println("RESET");
@@ -187,8 +196,9 @@ void draw()
   //=========
   float eyeX=(0.85*50);
   float eyeY=(0.85*110);
-  camera(eyeX, eyeY, 20, 0, 0, 40, 0, 0, -1);
-
+  if(DDD=0){
+    camera(eyeX, eyeY, 20, 0, 0, 40, 0, 0, -1);
+  }
   int nHarmo=PD.GetPowers().length;
   float[] frequenze = new float[nHarmo];
   float[] ampiezze = new float[nHarmo];
