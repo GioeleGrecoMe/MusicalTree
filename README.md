@@ -98,6 +98,13 @@ A bolt starts from the light computed point and falls on the planet when the sou
   - saxophone and piano that moves as the sound level
   - star fountain that come out from the sax when mean level is high
   - light in piano of the color of the strongest note
+### Other things
+pressing:
+  - UP -> amplification level goes up
+  - DOWN -> amplification level goes down
+  - ENTER -> print amplification level
+  - ALT -> reset datas store of the tree
+  - SHIFT -> change visualization from fixed to navigable 3D
 
 
 Developed by Gioele Greco, Tommaso Botti and Nicolò Botti.
