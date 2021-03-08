@@ -53,10 +53,47 @@ It is also possible to correct the implementation by uncomment the approximated 
 The graphical component can be devided in two time-dependent macro classes:
  - instantaneous reactive components
  - stored datas component: tree.
-#### Tree
+### Tree
 The main component is the tree, starting from the "3D fractal tree"(https://www.youtube.com/watch?v=JcopTKXt8L8) was created some functions that make tree interact with the stored sound datas.
 Tree grows trhought points that are calculated and stored during all the time.
 The points coordinates are stored every 0.8s.
-The location of the points 
+The location of the points is determined from attraction points that are computated, starting from the audio datas, in polar coordinates.
+So knowing the attraction point coordinates, a branch grows from the minimun distance between the existing branches and the attraction point.
+There are also some condition that decide where put new branches points, like mass equilibrium condition.
+To implement this condition, evry branch has a weight, a mass that is calculated depending from the distance of the branch to the starting tree point, and the "age" of the branch.
+To each young and light branch can grow a leaf, normally to its direction, that is made by Bezier curves.
+#### How is calculated attraction point position?
+This position depends from the mean of the position calculated for each harmonic that is listened in the previous 0.8s.
+The position of a pure sine sound is defined in polar coordinates where:
+ - azimuth divided in 12 sectors = musical notes
+ - height depends directly from the octave (or the frequency as the same)
+ - radial distance depends directly from the amplitude
+### Istantaneous reactive components
+#### Envirorment
+The environment is made of a sphere, that is the planet on which the tree grows.
+At a distance Z over the planet is located a light that has the color of the sum of the sounds colors. Its intensity depends from the sound intensity.
+A bolt starts from the light computed point and falls on the planet when the sound level is around the peak. Its color is related to the highest sound.
+#### Genre dependent components
+##### Classica
+  -7 columns around the tree that represents the notes. They shake when the level is around the peak
+  -a light illuminates the column of the highest note proportionally to the intensity of sound
+  -sun that is computed like waveshape in 2 dimensions
+##### Reggae
+  -setting sun that is computed like waveshape in 2 dimensions
+“typical” leaves that navigate in the sky
+  -background and tree leaves are colored in green, yellow and red
+##### Pop
+  -Flash when level is very high
+  -Color mixed points cloud that expands proportionally to the sound level 
+##### Rock
+  -Flash with rock hands on the background
+  -planet that change radius as sound level
+##### Jazz
+  -Stars that moves simulating a real sky
+  -saxophone and piano that moves as the sound level
+  -star fountain that come out from the sax when mean level is high
+  -light in piano of the color of the strongest note
+
+## DEMO
 
 Developed by Gioele Greco, Tommaso Botti and Nicolò Botti.
