@@ -39,7 +39,7 @@ The implementation can be divided in three parts:
 ### Audio
 Starting from the “Audio analysis for pitch extraction” made by L. Anton-Canalis (https://gist.github.com/uberjosh/5001856#file-gistfile1-txt) that uses Minim library.
 This code was rearranged to our purposes and extract some useful parameters:
- -	Spectrum 
+ -	Spectrum (accurate only for frequency >200Hz and <10kHz)
  -	first 10 high intensity harmonics (frequency and amplitude)
  -	total amplitude of the signal
  -	energy of the signal
