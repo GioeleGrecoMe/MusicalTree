@@ -528,7 +528,7 @@ float n=0;
     translate(-10,10,5);
     rotateX(angles);
     rotateY(angles);
-    
+    sax.setFill(color(20,200,200));
     shape(sax,0,0);
     popMatrix();  
     pushMatrix();
