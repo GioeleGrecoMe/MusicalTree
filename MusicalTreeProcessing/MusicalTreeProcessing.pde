@@ -241,7 +241,7 @@ void draw()
         stroke(st*25.5/10,150,255);
       }
       strokeWeight(random(0+0.01*(100*(1-66.66*mediaL)),3));
-      point(Xs[st]*cos(0.00002*PI*(frameCount%100000)),Ys[st]*sin(0.00002*PI*(frameCount%100000)),Zs[st]);    
+      point(Xs[st],Ys[st],Zs[st]);    
     }
   popMatrix();
  }
