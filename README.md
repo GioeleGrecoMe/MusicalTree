@@ -62,7 +62,7 @@ This synaesthetics choices are very common in classical music since the 700’.
 The main component is the tree, starting from the "3D fractal tree"(https://www.youtube.com/watch?v=JcopTKXt8L8) was created some functions that make tree interact with the stored sound datas.
 Tree grows trhought points that are calculated and stored during all the time.
 The points coordinates are stored every 0.8s.
-The location of the points is determined from attraction points that are computated, starting from the audio datas, in polar coordinates.
+The location of the points is determined from attraction points that are computated, starting from the audio datas, in polar coordinates. 
 So knowing the attraction point coordinates, a branch grows from the minimun distance between the existing branches and the attraction point.
 There are also some condition that decide where put new branches points, like mass equilibrium condition.
 To implement this condition, evry branch has a weight, a mass that is calculated depending from the distance of the branch to the starting tree point, and the "age" of the branch.
@@ -73,6 +73,8 @@ The position of a pure sine sound is defined in polar coordinates where:
  - azimuth divided in 12 sectors = musical notes
  - height depends directly from the octave (or the frequency as the same)
  - radial distance depends directly from the amplitude
+(Demo video https://youtu.be/3loV4kvBc7I )
+
 ### Istantaneous reactive components
 #### Envirorment
 The environment is made of a sphere, that is the planet on which the tree grows.
