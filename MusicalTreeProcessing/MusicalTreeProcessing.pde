@@ -68,8 +68,8 @@ float FreqPos(float f)
 
 void setup()
 {
-  size(700,300, P3D);
- //fullScreen(P3D);
+  //size(700,300, P3D);
+  fullScreen(P3D);
   cam = new PeasyCam(this, 600);
   smooth(2);
   frameRate(10);
@@ -107,7 +107,7 @@ void setup()
    float n1,n2,n3;
    n1=random(-1500,1500);
    n2=random(-1500,1500);
-   n3=random(-100,400);
+   n3=random(-400,400);
     Xs=append(Xs,n1);
     Ys=append(Ys,n2);
     Zs=append(Zs,n3);
