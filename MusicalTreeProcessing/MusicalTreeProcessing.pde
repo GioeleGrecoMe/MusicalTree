@@ -287,7 +287,7 @@ for(int i=0; i<FB.length; i++){
   Energy=level;
   for(int i=0; i<FB.length; i++){
    FforS[i] =Fz[i][0];
-   AforS[i] = Fz[i][1];
+   AforS[i] = AMPLI*Fz[i][1];
    MaxA[i]=round(AforS[i]);
    if(AforS[i]<0.98*max(AforS)&&(AforS[i]>0.8*max(AforS))){
      Energy=Energy*1.05;
