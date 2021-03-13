@@ -541,8 +541,8 @@ float n=0;
     popMatrix();
     if(mediaL>0.03){
     pushMatrix();
-    
-    for(int i=1;i<bpm*2;i++){
+    if(bpm<20){bpm==20;}
+    for(int i=1;i<round(bpm*2);i++){
       float DFact=(pow(i,0.3));
       if(i%2==0){
       stroke(255,0,255);
