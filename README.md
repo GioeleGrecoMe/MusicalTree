@@ -1,7 +1,7 @@
 # MusicalTree
 This is the repository for our CPAC project. 
 Some demo video can be found at this links: 
--[Time lapse demonstration] - https://youtu.be/7pRX-LU2cJ0
+-[Time lapse demonstration](#Time lapse demonstration) - https://youtu.be/7pRX-LU2cJ0
 -[Tree attraction points positions] - https://www.youtube.com/watch?v=3loV4kvBc7I
 
 ## Abstract:
