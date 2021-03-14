@@ -1,9 +1,10 @@
 # MusicalTree
 This is the repository for our CPAC project. 
 Some demo video can be found at this links: 
--Time lapse demonstration --> https://youtu.be/7pRX-LU2cJ0
--Tree attraction points positions--> https://www.youtube.com/watch?v=3loV4kvBc7I
-
+-Time lapse demonstration 
+-Tree attraction points positions
+--> https://youtu.be/7pRX-LU2cJ0
+--> https://www.youtube.com/watch?v=3loV4kvBc7I
 ## Abstract:
 The Musical Tree is a 3D music visualizer that can adapt itself depending on the musical genre to which it is exposed.
 It is composed by a tree that grows “following” the music and by other interactive elements. 
