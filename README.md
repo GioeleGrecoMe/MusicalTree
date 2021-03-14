@@ -1,12 +1,15 @@
 # MusicalTree
 This is the repository for our CPAC project. 
 Some demo video can be found at this links: 
+- Genre recognition --> https://youtu.be/F8m3yaaD1vE 
 - Time lapse demonstration --> https://youtu.be/7pRX-LU2cJ0
 - Tree attraction points positions --> https://www.youtube.com/watch?v=3loV4kvBc7I
+- Live event use --> https://youtu.be/mu6EM5wPX3Q?t=48
 
 ## Abstract:
 The Musical Tree is a 3D music visualizer that can adapt itself depending on the musical genre to which it is exposed.
 It is composed by a tree that grows “following” the music and by other interactive elements. 
+It is created for live events to be used like projection or hologram in 3D mode. 
 
 ## Music Genre Classification:
 We implemented a machine learning based algorithm to perform the genre classification. The feature extraction process is applied to the GTZAN dataset in order to discriminate five music genres: 'Classical', 'Pop', 'Reggae', 'Rock', 'Jazz'. Each song in the database was stored as a 22050 [Hz], 16bits, and mono audio file.
