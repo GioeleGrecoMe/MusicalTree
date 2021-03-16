@@ -51,7 +51,8 @@ This code was rearranged to our purposes and extract some useful parameters:
 Each one of these parameters is also stored in a buffer that allow to calculate:
  -	mean intensity level
  -	mean spectrum
-<p> <img width="700" height="500" src="images/Screenshot(414).png"> </p>
+
+<p> <img width="700" height="500" src="images/Screenshot%20(414).png"> </p>
 
 
 It is also possible to correct the implementation by uncomment the approximated phone curve
